@@ -1,5 +1,5 @@
 <p>
-  Posted: {{moment-format model.postDate 'LLL'}}
+  Posted: {{moment-format model.postDate 'LLL'}} [<span id="delete" {{action 'delete' model}}>delete</span>]
 </p>
 <h2>{{model.title}} - ${{model.price}} <small>({{model.location}})</small></h2>
 

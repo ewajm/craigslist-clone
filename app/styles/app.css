@@ -28,3 +28,8 @@ a, a:hover, a:visited {
 #footer {
   text-align: center;
 }
+
+#delete {
+  color: #FF8900;
+  cursor: pointer;
+}
