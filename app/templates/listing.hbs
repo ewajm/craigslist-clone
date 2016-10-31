@@ -1,1 +1,24 @@
-{{outlet}}
+<p>
+  Posted: {{moment-format model.postDate 'LLL'}}
+</p>
+<h2>{{model.title}} - ${{model.price}} <small>({{model.location}})</small></h2>
+
+{{#if model.image}}
+  <img src={{model.image}}>
+{{/if}}
+
+<p>
+  {{model.description}}
+</p>
+
+<div class="row">
+  <div class="col-sm-3">
+    Post id: {{model.id}}
+  </div>
+  <div class="col-sm-3">
+    Posted: {{moment-format model.postDate 'LLL'}}
+  </div>
+  <div class="col-sm-4">
+      {{model.contact}}
+  </div>
+</div>

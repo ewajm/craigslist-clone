@@ -1,1 +1,5 @@
 {{new-listing saveListing='saveListing' categories=model}}
+
+{{#each model as |category|}}
+  {{category-tile category=category}}
+{{/each}}

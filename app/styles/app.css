@@ -4,11 +4,11 @@ h1 {
 }
 
 a, a:hover, a:visited {
-  color: #412559;
+  color: #FF8900;
 }
 
 .btn:hover {
-  background: #412559;
+  background: #563A6F;
   color: #FFF;
 }
 
