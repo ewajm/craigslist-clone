@@ -16,6 +16,15 @@ a, a:hover, a:visited {
   background: #FFF;
   color: #000;
   border: 1px solid #000;
+  display: block;
+  margin: 0 auto;
+}
+
+.well {
+  max-width: 300px;
+  text-align: center;
+  display: block;
+  margin: 10px auto;
 }
 
 #logo {
@@ -27,9 +36,21 @@ a, a:hover, a:visited {
 
 #footer {
   text-align: center;
+  margin-top: 30px;
 }
 
 #delete {
   color: #FF8900;
   cursor: pointer;
+}
+
+#new-listing {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#form {
+  width: 500px;
+  display: block;
+  margin: 30px auto;
 }

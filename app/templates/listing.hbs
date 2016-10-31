@@ -1,5 +1,8 @@
 <p>
-  Posted: {{moment-format model.postDate 'LLL'}} [<span id="delete" {{action 'delete' model}}>delete</span>]
+  {{#link-to 'category' model.category}}&larr; back to {{model.category.name}}{{/link-to}}
+</p>
+<p>
+  posted: {{moment-format model.postDate 'LLL'}} [<span id="delete" {{action 'delete' model}}>delete</span>]
 </p>
 <h2>{{model.title}} - ${{model.price}} <small>({{model.location}})</small></h2>
 
@@ -13,10 +16,10 @@
 
 <div class="row">
   <div class="col-sm-3">
-    Post id: {{model.id}}
+    post id: {{model.id}}
   </div>
   <div class="col-sm-3">
-    Posted: {{moment-format model.postDate 'LLL'}}
+    posted: {{moment-format model.postDate 'LLL'}}
   </div>
   <div class="col-sm-4">
       {{model.contact}}

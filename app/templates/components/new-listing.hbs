@@ -1,10 +1,9 @@
 {{#if addNewListing}}
-  <h1>New Listing</h1>
   <div>
-    <form {{action 'saveListing' on='submit'}}>
+    <form id="form" {{action 'saveListing' on='submit'}}>
       <div class="form-group">
         <label for="title">Title</label>
-        {{input value=title id="title" required='required'}}
+        {{input class="form-control" value=title id="title" required='required'}}
       </div>
       <div class="form-group">
         <label for="category">Category</label>
@@ -17,23 +16,23 @@
       </div>
       <div class="form-group">
         <label for="location">Location</label>
-        {{input value=location id="location" required='required'}}
+        {{input class="form-control" value=location id="location" required='required'}}
       </div>
       <div class="form-group">
         <label for="price">Price</label>
-        {{input value=price id="price" type='number' required='required'}}
+        {{input class="form-control" value=price id="price" type='number' required='required'}}
       </div>
       <div class="form-group">
         <label for="image">Image URL</label>
-        {{input value=image id="image"}}
+        {{input class="form-control" value=image id="image"}}
       </div>
       <div class="form-group">
         <label for="description">Description</label>
-        {{input value=description id="description"}}
+        {{textarea rows=5 class="form-control" value=description id="description"}}
       </div>
       <button class="btn" >Save</button>
     </form>
   </div>
 {{else}}
-  <button class="btn" {{action 'listingFormShow'}}>+ New Listing</button>
+  <button id="new-listing" class="btn" {{action 'listingFormShow'}}>+ New Listing</button>
 {{/if}}
