@@ -1,5 +1,9 @@
-<h2>{{category.name}}</h2>
+<h4><span id="home-link">{{#link-to 'index'}}ghoulslist{{/link-to}}</span> > {{category.name}}</h4>
 
 {{#each sortedListings as |listing|}}
-  {{#link-to 'listing' listing.id}}<p>${{listing.price}} - {{listing.title}} ({{listing.location}})</p>{{/link-to}}
+<p>
+  {{#link-to 'listing' listing.id}}<span>{{listing.title}}</span>{{/link-to}}
+  <span id="price">${{listing.price}}</span>
+  <span>({{listing.location}})</span>
+</p>
 {{/each}}
