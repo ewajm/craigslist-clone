@@ -3,6 +3,21 @@ h1 {
   margin-top: 0 !important;
 }
 
+a, a:hover, a:visited {
+  color: #412559;
+}
+
+.btn:hover {
+  background: #412559;
+  color: #FFF;
+}
+
+.btn {
+  background: #FFF;
+  color: #000;
+  border: 1px solid #000;
+}
+
 #logo {
   width: 75px;
   height: auto;

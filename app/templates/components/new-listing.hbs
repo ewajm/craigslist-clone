@@ -1,1 +1,45 @@
-{{yield}}
+{{#if addNewListing}}
+  <h1>New Listing</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        {{input value=title id="title"}}
+      </div>
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select class="form-control" name="category" onchange={{action "updateValue" value="target.value"}}>
+          <option>gravesites</option>
+          <option>potions &amp; ingredients</option>
+          <option>cursed artifacts</option>
+          <option>spare body parts</option>
+          <option>familiars</option>
+          <option>spellbooks</option>
+          <option>possessed weapons</option>
+          <option>haunting accessories</option>
+          <option>cauldrons</option>
+          <option>coffins</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        {{input value=location id="location"}}
+      </div>
+      <div class="form-group">
+        <label for="price">Price</label>
+        {{input value=price id="price" type='number'}}
+      </div>
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image id="image"}}
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        {{input value=description id="description"}}
+      </div>
+      <button class="btn" {{action 'saveListing'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn" {{action 'listingFormShow'}}>+ New Listing</button>
+{{/if}}
