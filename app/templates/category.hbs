@@ -1,5 +1,1 @@
-<h2>{{model.name}}</h2>
-
-{{#each model.listings as |listing|}}
-  {{#link-to 'listing' listing.id}}<p>${{listing.price}} - {{listing.title}} ({{listing.location}})</p>{{/link-to}}
-{{/each}}
+{{category-display category=model}}

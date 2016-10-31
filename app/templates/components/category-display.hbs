@@ -1,0 +1,5 @@
+<h2>{{category.name}}</h2>
+
+{{#each sortedListings as |listing|}}
+  {{#link-to 'listing' listing.id}}<p>${{listing.price}} - {{listing.title}} ({{listing.location}})</p>{{/link-to}}
+{{/each}}
