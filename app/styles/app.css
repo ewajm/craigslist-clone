@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+  margin-top: 0 !important;
+}
+
+#logo {
+  width: 75px;
+  height: auto;
+  display: block;
+  margin: 20px auto 0;
+}
+
+#footer {
+  text-align: center;
+}
