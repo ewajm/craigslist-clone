@@ -16,8 +16,6 @@ a, a:hover, a:visited {
   background: #FFF;
   color: #000;
   border: 1px solid #000;
-  display: block;
-  margin: 0 auto;
 }
 
 .well {
@@ -47,10 +45,16 @@ a, a:hover, a:visited {
 #new-listing {
   margin-top: 30px;
   margin-bottom: 30px;
+  display: block;
+  margin: 30px auto;
 }
 
 #form {
   width: 500px;
   display: block;
   margin: 30px auto;
+}
+
+#form-buttons {
+  text-align: center;
 }
