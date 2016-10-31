@@ -2,7 +2,7 @@ import Ember from 'ember';
 import moment from 'moment';
 
 export default Ember.Component.extend({
-  category: 'gravesites',
+  category: 0,
   addNewListing: false,
   actions: {
     listingFormShow() {
@@ -14,15 +14,15 @@ export default Ember.Component.extend({
     saveListing() {
       var params = {
         title: this.get('title'),
-        category: this.get('category'),
         location: this.get('location'),
         price: parseInt(this.get('price')),
         image: this.get('image'),
         description: this.get('description'),
         postDate: moment().valueOf()
       };
+      var newCategory = this.get('category');
       this.set('addNewListing', false);
-      this.sendAction('saveListing', params);
+      this.sendAction('saveListing', params, newCategory);
     }
   }
 });
